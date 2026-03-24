@@ -1,7 +1,7 @@
 """Generate a Tokyo Night v2 aurora-wave terminal background image."""
 import numpy as np
 from PIL import Image, ImageFilter
-import math, random
+import math, os, random
 
 random.seed(7)
 np.random.seed(7)
@@ -175,7 +175,7 @@ result = (r_np * 0.82 + b_np * 0.18).astype(np.uint8)
 print("Adding film grain...")
 result = add_noise(result, strength=4)
 
-out_path = "/Users/a206547942/src/iTerm2-Tokyo-Night-Color-Theme/tokyo-night-v2-bg.png"
+out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tokyo-night-v2-bg.png")
 print(f"Saving to {out_path} ...")
 Image.fromarray(result).save(out_path, optimize=False, compress_level=6)
 print("Done.")
