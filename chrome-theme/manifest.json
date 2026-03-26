@@ -1,0 +1,114 @@
+{
+  "manifest_version": 3,
+  "name": "Tokyo Night",
+  "version": "1.0",
+  "description": "Tokyo Night dark theme \u2014 inspired by tokyo-night-vscode and Catppuccin.",
+  "theme": {
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_frame_inactive": "images/theme_frame.png",
+      "theme_toolbar": "images/theme_toolbar.png",
+      "theme_tab_background": "images/theme_tab_background.png",
+      "theme_ntp_background": "images/theme_ntp_background.png"
+    },
+    "colors": {
+      "frame": [
+        26,
+        27,
+        39
+      ],
+      "frame_inactive": [
+        19,
+        20,
+        30
+      ],
+      "frame_incognito": [
+        22,
+        13,
+        42
+      ],
+      "toolbar": [
+        30,
+        32,
+        54
+      ],
+      "tab_text": [
+        187,
+        198,
+        246
+      ],
+      "tab_background_text": [
+        114,
+        98,
+        170
+      ],
+      "bookmark_text": [
+        187,
+        198,
+        246
+      ],
+      "ntp_background": [
+        26,
+        27,
+        39
+      ],
+      "ntp_text": [
+        187,
+        198,
+        246
+      ],
+      "ntp_link": [
+        122,
+        162,
+        247
+      ],
+      "ntp_header": [
+        19,
+        20,
+        30
+      ],
+      "ntp_section": [
+        30,
+        32,
+        54
+      ],
+      "ntp_section_text": [
+        187,
+        198,
+        246
+      ],
+      "ntp_section_link": [
+        42,
+        183,
+        231
+      ],
+      "omnibox_background": [
+        19,
+        20,
+        30
+      ],
+      "omnibox_text": [
+        187,
+        198,
+        246
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.5,
+        0.5,
+        0.78
+      ],
+      "background_tab": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "center top",
+      "ntp_background_repeat": "no-repeat",
+      "ntp_logo_alternate": 1
+    }
+  }
+}
