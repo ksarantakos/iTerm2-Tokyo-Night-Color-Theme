@@ -1,0 +1,5 @@
+__pycache__/
+.check-saved/
+
+# Chrome writes this into the unpacked extension directory when the theme is loaded
+chrome-theme/Cached\ Theme.pak

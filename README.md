@@ -76,14 +76,14 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 | Color Name | Normal | Bright |
 |---|---|---|
-| Black      | `#1A1B27` | `#3B3D5C` |
+| Black      | `#2A2734` | `#454159` |
 | Red        | `#F7768E` | `#FF9E9C` |
 | Green      | `#00BCDB` | `#4EF4DF` |
-| Yellow     | `#E0AF68` | `#FFD580` |
+| Yellow     | `#E1C381` | `#FFD580` |
 | Blue       | `#7AA2F7` | `#A9B8FF` |
 | Magenta    | `#E69F51` | `#FFB86C` |
 | Cyan       | `#2AB7E7` | `#24D5F8` |
-| White      | `#BBC6F6` | `#EEEBFF` |
+| White      | `#9B84EE` | `#EEEBFF` |
 
 <br/>
 

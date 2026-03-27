@@ -3,6 +3,7 @@ PYTHON := python3
 # All files produced by the generator scripts.
 # Includes manifest.json, which gen_chrome_theme.py also rewrites.
 ALL_ASSETS := \
+	tokyo-night-bg.png \
 	tokyo-night-v2-bg.png \
 	chrome-theme/manifest.json \
 	chrome-theme/images/theme_ntp_background.png \
@@ -19,9 +20,10 @@ ALL_ASSETS := \
 ## Compares generated output against HEAD (committed), not the index.
 check:
 	@echo "Saving working-tree state..."
-	@mkdir -p .check-saved/chrome-theme/images
+	@mkdir -p .check-saved/chrome-theme/images .check-saved
 	@for f in $(ALL_ASSETS); do cp "$$f" ".check-saved/$$f" 2>/dev/null || true; done
 	@echo "Running generators..."
+	@$(PYTHON) gen_bg.py
 	@$(PYTHON) gen_bg2.py
 	@$(PYTHON) gen_chrome_theme.py
 	@echo ""
@@ -45,6 +47,7 @@ check:
 
 ## regen — regenerate assets in-place and stage them for commit.
 regen:
+	$(PYTHON) gen_bg.py
 	$(PYTHON) gen_bg2.py
 	$(PYTHON) gen_chrome_theme.py
 	git add $(ALL_ASSETS)
