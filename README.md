@@ -65,6 +65,29 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 <br/>
 
+## Slack
+
+A matching sidebar theme is in [`slack-theme.txt`](./slack-theme.txt).
+
+1. In Slack open **Preferences → Themes**
+2. Scroll to the bottom and click **Open theme creator**
+3. Paste the string from `slack-theme.txt` into the custom theme field
+
+| Colour | Hex | Used for |
+|---|---|---|
+| Sidebar BG | `#1A1B27` | Sidebar background |
+| Menu hover | `#252640` | Hovered channel/DM row |
+| Active item | `#7AA2F7` | Active channel highlight |
+| Active item text | `#1A1B27` | Text on active channel |
+| Hover item | `#1E2036` | Hover row background |
+| Sidebar text | `#BBC6F6` | Channel and DM names |
+| Active presence | `#4EF4DF` | Online dot |
+| Mention badge | `#F7768E` | Unread / mention counter |
+| Top nav BG | `#13141E` | Top bar background |
+| Top nav text | `#BBC6F6` | Top bar icons and text |
+
+<br/>
+
 ## Colors
 
 ### Tokyo Night (original)
