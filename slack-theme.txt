@@ -1,1 +1,10 @@
-#24263E,#2E3257,#7AA2F7,#1A1B27,#2A2D4A,#BBC6F6,#4EF4DF,#F7768E,#1A1B27,#BBC6F6
+Tokyo Night v2 — Slack theme
+Slack Preferences → Appearance → Custom theme
+
+System navigation:   #24263E   (sidebar background)
+Selected items:      #7AA2F7   (active channel / blue accent)
+Presence indication: #4EF4DF   (online dot / bright cyan-green)
+Notifications:       #F7768E   (badge / red)
+
+Tip: enable "Window gradient" to blend the sidebar and selected-item
+colours together in window backgrounds.
