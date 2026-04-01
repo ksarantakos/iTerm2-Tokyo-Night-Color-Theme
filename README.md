@@ -65,6 +65,21 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 <br/>
 
+## Slack
+
+**Preferences → Appearance → Custom theme** — set each of the four fields:
+
+| Field | Hex | Palette entry |
+|---|---|---|
+| System navigation | `#2A2734` | Ansi 0 Black |
+| Selected items | `#7AA2F7` | Blue |
+| Presence indication | `#4EF4DF` | Bright Green |
+| Notifications | `#F7768E` | Red |
+
+Enable **Window gradient** to blend the sidebar and selected-item colours in window backgrounds.
+
+<br/>
+
 ## Colors
 
 ### Tokyo Night (original)
