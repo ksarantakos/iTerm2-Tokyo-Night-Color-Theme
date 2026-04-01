@@ -15,6 +15,7 @@ COLORS_V2 := \
 ALL_ASSETS := \
 	tokyo-night-bg.png \
 	tokyo-night-v2-bg.png \
+	tokyo-night-desktop-bg.png \
 	$(COLORS_V2) \
 	chrome-theme/manifest.json \
 	chrome-theme/images/theme_ntp_background.png \
@@ -36,6 +37,7 @@ check:
 	@echo "Running generators..."
 	@$(PYTHON) gen_bg.py
 	@$(PYTHON) gen_bg2.py
+	@$(PYTHON) gen_desktop_bg.py
 	@$(PYTHON) gen_swatches.py
 	@$(PYTHON) gen_chrome_theme.py
 	@echo ""
@@ -61,6 +63,7 @@ check:
 regen:
 	$(PYTHON) gen_bg.py
 	$(PYTHON) gen_bg2.py
+	$(PYTHON) gen_desktop_bg.py
 	$(PYTHON) gen_swatches.py
 	$(PYTHON) gen_chrome_theme.py
 	git add $(ALL_ASSETS)

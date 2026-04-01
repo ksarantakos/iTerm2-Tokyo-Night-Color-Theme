@@ -7,14 +7,14 @@ Composition:
   - Star field
   - Stylised city silhouette with lit windows at the bottom
 
-Output: tokyo-night-desktop-bg.png  (3840 × 2160, 4K)
+Output: tokyo-night-desktop-bg.png  (3440 × 1440, ultrawide)
 """
 import math, os, random
 import numpy as np
 from PIL import Image, ImageFilter, ImageDraw
 
 random.seed(13)
-np.random.seed(13)
+np.random.seed(13)   # used by add_noise; make_stars uses its own default_rng(42)
 
 W, H = 3440, 1440
 
@@ -175,7 +175,7 @@ def make_city(w, h, horizon):
         # Cluster buildings: vary height based on local density
         bh = rng.randint(int(h * 0.08), int(h * 0.42))
         buildings.append((x, bw, bh))
-        x += bw + rng.randint(-10, 8)   # slight overlap for depth
+        x += bw + rng.randint(0, 8)   # slight gap/overlap on the right edge
 
     # Sort so taller buildings draw last (appear in front)
     buildings.sort(key=lambda b: b[2])
