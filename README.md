@@ -74,16 +74,18 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 ### Tokyo Night v2 (improved contrast)
 
+![Black](./colors-v2/black.png) ![Bright Black](./colors-v2/bright_black.png) ![Red](./colors-v2/red.png) ![Bright Red](./colors-v2/bright_red.png) ![Green](./colors-v2/green.png) ![Bright Green](./colors-v2/bright_green.png) ![Yellow](./colors-v2/yellow.png) ![Bright Yellow](./colors-v2/bright_yellow.png) ![Blue](./colors-v2/blue.png) ![Bright Blue](./colors-v2/bright_blue.png) ![Magenta](./colors-v2/magenta.png) ![Bright Magenta](./colors-v2/bright_magenta.png) ![Cyan](./colors-v2/cyan.png) ![Bright Cyan](./colors-v2/bright_cyan.png) ![White](./colors-v2/white.png) ![Bright White](./colors-v2/bright_white.png)
+
 | Color Name | Normal | Bright |
 |---|---|---|
-| Black      | `#2A2734` | `#454159` |
-| Red        | `#F7768E` | `#FF9E9C` |
-| Green      | `#00BCDB` | `#4EF4DF` |
-| Yellow     | `#E1C381` | `#FFD580` |
-| Blue       | `#7AA2F7` | `#A9B8FF` |
-| Magenta    | `#E69F51` | `#FFB86C` |
-| Cyan       | `#2AB7E7` | `#24D5F8` |
-| White      | `#9B84EE` | `#EEEBFF` |
+| Black      | `#2A2734` ![Black](./colors-v2/black.png)           | `#454159` ![Bright Black](./colors-v2/bright_black.png)     |
+| Red        | `#F7768E` ![Red](./colors-v2/red.png)               | `#FF9E9C` ![Bright Red](./colors-v2/bright_red.png)         |
+| Green      | `#00BCDB` ![Green](./colors-v2/green.png)           | `#4EF4DF` ![Bright Green](./colors-v2/bright_green.png)     |
+| Yellow     | `#E1C381` ![Yellow](./colors-v2/yellow.png)         | `#FFD580` ![Bright Yellow](./colors-v2/bright_yellow.png)   |
+| Blue       | `#7AA2F7` ![Blue](./colors-v2/blue.png)             | `#A9B8FF` ![Bright Blue](./colors-v2/bright_blue.png)       |
+| Magenta    | `#E69F51` ![Magenta](./colors-v2/magenta.png)       | `#FFB86C` ![Bright Magenta](./colors-v2/bright_magenta.png) |
+| Cyan       | `#2AB7E7` ![Cyan](./colors-v2/cyan.png)             | `#24D5F8` ![Bright Cyan](./colors-v2/bright_cyan.png)       |
+| White      | `#9B84EE` ![White](./colors-v2/white.png)           | `#EEEBFF` ![Bright White](./colors-v2/bright_white.png)     |
 
 <br/>
 

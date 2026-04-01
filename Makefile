@@ -1,10 +1,21 @@
 PYTHON := python3
 
+COLORS_V2 := \
+	colors-v2/black.png        colors-v2/bright_black.png \
+	colors-v2/red.png          colors-v2/bright_red.png \
+	colors-v2/green.png        colors-v2/bright_green.png \
+	colors-v2/yellow.png       colors-v2/bright_yellow.png \
+	colors-v2/blue.png         colors-v2/bright_blue.png \
+	colors-v2/magenta.png      colors-v2/bright_magenta.png \
+	colors-v2/cyan.png         colors-v2/bright_cyan.png \
+	colors-v2/white.png        colors-v2/bright_white.png
+
 # All files produced by the generator scripts.
 # Includes manifest.json, which gen_chrome_theme.py also rewrites.
 ALL_ASSETS := \
 	tokyo-night-bg.png \
 	tokyo-night-v2-bg.png \
+	$(COLORS_V2) \
 	chrome-theme/manifest.json \
 	chrome-theme/images/theme_ntp_background.png \
 	chrome-theme/images/theme_frame.png \
@@ -20,11 +31,12 @@ ALL_ASSETS := \
 ## Compares generated output against HEAD (committed), not the index.
 check:
 	@echo "Saving working-tree state..."
-	@mkdir -p .check-saved/chrome-theme/images .check-saved
+	@mkdir -p .check-saved/colors-v2 .check-saved/chrome-theme/images
 	@for f in $(ALL_ASSETS); do cp "$$f" ".check-saved/$$f" 2>/dev/null || true; done
 	@echo "Running generators..."
 	@$(PYTHON) gen_bg.py
 	@$(PYTHON) gen_bg2.py
+	@$(PYTHON) gen_swatches.py
 	@$(PYTHON) gen_chrome_theme.py
 	@echo ""
 	@fail=0; \
@@ -49,6 +61,7 @@ check:
 regen:
 	$(PYTHON) gen_bg.py
 	$(PYTHON) gen_bg2.py
+	$(PYTHON) gen_swatches.py
 	$(PYTHON) gen_chrome_theme.py
 	git add $(ALL_ASSETS)
 	@echo ""
