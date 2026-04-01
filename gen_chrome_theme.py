@@ -60,7 +60,7 @@ MANIFEST = {
             "toolbar":              list(BG_MID),
             # Tab text
             "tab_text":             list(FG),
-            "tab_background_text":  [0x72, 0x62, 0xaa],   # dim purple
+            "tab_background_text":  [0x55, 0x48, 0x80],   # dim purple — lower contrast reinforces inactive state
             # Bookmarks bar
             "bookmark_text":        list(FG),
             # New Tab Page
@@ -118,42 +118,35 @@ def gradient_strip(w, h, left_color, right_color, mid_color=None):
 
 
 # ── theme_frame.png ───────────────────────────────────────────────────────────
-# Subtle left-to-right gradient across the title bar; very dark overall.
+# Subtle left-to-right gradient across the title bar. No vertical gradient or
+# separator lines — any horizontal band would align badly with Chrome's chrome.
 print("Generating theme_frame.png ...")
 frame = gradient_strip(
     w=3840, h=80,
-    left_color=(0x16, 0x17, 0x28),   # slightly blue-dark on left
-    right_color=(0x1c, 0x1d, 0x30),  # slightly lighter right
+    left_color=(0x16, 0x17, 0x26),
+    right_color=(0x1c, 0x1d, 0x2e),
     mid_color=BG,
 )
-# Add a 1px bottom highlight line (subtle blue rule at bottom of frame)
-frame[-1, :] = [0x2a, 0x2c, 0x4a]
 Image.fromarray(frame).save(os.path.join(IMG_DIR, "theme_frame.png"))
 print("  → chrome-theme/images/theme_frame.png")
 
 
 # ── theme_toolbar.png ─────────────────────────────────────────────────────────
-# Slightly lighter than the frame; very subtle top-to-bottom gradient.
+# Flat active-tab color — no vertical gradient, no separator line.
+# A vertical gradient creates a horizontal band whose position depends on
+# where Chrome splits the tab strip from the nav bar, which looks like a
+# stray line cutting through the back/forward buttons.
 print("Generating theme_toolbar.png ...")
-toolbar = np.zeros((80, 3840, 3), dtype=np.uint8)
-y = np.linspace(0.0, 1.0, 80)
-for c in range(3):
-    col = BG_MID[c] + (BG[c] - BG_MID[c]) * y
-    toolbar[:, :, c] = np.clip(col, 0, 255).astype(np.uint8)[:, None]
-# Bottom separator line
-toolbar[-1, :] = [0x30, 0x32, 0x50]
+toolbar = np.full((80, 3840, 3), BG_MID, dtype=np.uint8)
 Image.fromarray(toolbar).save(os.path.join(IMG_DIR, "theme_toolbar.png"))
 print("  → chrome-theme/images/theme_toolbar.png")
 
 
 # ── theme_tab_background.png ──────────────────────────────────────────────────
-# Inactive tab: a small (200×40) strip, slightly lighter than the toolbar.
+# Inactive tab: noticeably darker than the active tab (BG_MID) so the active
+# tab reads clearly without relying on text colour alone.
 print("Generating theme_tab_background.png ...")
-tab_bg = gradient_strip(
-    w=200, h=40,
-    left_color=(0x22, 0x24, 0x3c),
-    right_color=(0x1e, 0x20, 0x36),
-)
+tab_bg = np.full((40, 200, 3), BG_DARK, dtype=np.uint8)
 Image.fromarray(tab_bg).save(os.path.join(IMG_DIR, "theme_tab_background.png"))
 print("  → chrome-theme/images/theme_tab_background.png")
 
