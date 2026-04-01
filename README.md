@@ -31,11 +31,19 @@ A [iTerm2](https://iterm2.com/) color theme inspired by [Tokyo Night](https://gi
 
 ## Backgrounds
 
-A 4K (3840×2160) aurora-wave background is included for use with iTerm2's background image feature.
+### iTerm2 background
+
+An aurora-wave background is included for use with iTerm2's background image feature.
 
 **`Preferences`** › **`Profiles`** › **`Window`** › **`Background Image`** › select `tokyo-night-v2-bg.png`
 
 Set opacity to **20–35%** to keep text readable.
+
+### Desktop background
+
+A 3440×1440 ultrawide desktop wallpaper with a stylised city silhouette and aurora sky is included as [`tokyo-night-desktop-bg.png`](./tokyo-night-desktop-bg.png).
+
+**System Settings → Wallpaper → Add Photo** → select `tokyo-night-desktop-bg.png`
 
 <br/>
 
