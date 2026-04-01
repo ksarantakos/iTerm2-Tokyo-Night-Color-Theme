@@ -67,17 +67,14 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 ## Slack
 
-A matching theme is in [`slack-theme.txt`](./slack-theme.txt).
+**Preferences → Appearance → Custom theme** — set each of the four fields:
 
-1. Open **Preferences → Appearance → Custom theme**
-2. Set each of the four colour fields:
-
-| Field | Hex |
-|---|---|
-| System navigation | `#24263E` |
-| Selected items | `#7AA2F7` |
-| Presence indication | `#4EF4DF` |
-| Notifications | `#F7768E` |
+| Field | Hex | Palette entry |
+|---|---|---|
+| System navigation | `#2A2734` | Ansi 0 Black |
+| Selected items | `#7AA2F7` | Blue |
+| Presence indication | `#4EF4DF` | Bright Green |
+| Notifications | `#F7768E` | Red |
 
 Enable **Window gradient** to blend the sidebar and selected-item colours in window backgrounds.
 
