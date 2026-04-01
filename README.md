@@ -75,15 +75,15 @@ A matching sidebar theme is in [`slack-theme.txt`](./slack-theme.txt).
 
 | Colour | Hex | Used for |
 |---|---|---|
-| Sidebar BG | `#1A1B27` | Sidebar background |
-| Menu hover | `#252640` | Hovered channel/DM row |
+| Sidebar BG | `#24263E` | Sidebar background |
+| Menu hover | `#2E3257` | Hovered channel/DM row |
 | Active item | `#7AA2F7` | Active channel highlight |
 | Active item text | `#1A1B27` | Text on active channel |
-| Hover item | `#1E2036` | Hover row background |
+| Hover item | `#2A2D4A` | Hover row background |
 | Sidebar text | `#BBC6F6` | Channel and DM names |
 | Active presence | `#4EF4DF` | Online dot |
 | Mention badge | `#F7768E` | Unread / mention counter |
-| Top nav BG | `#13141E` | Top bar background |
+| Top nav BG | `#1A1B27` | Top bar background |
 | Top nav text | `#BBC6F6` | Top bar icons and text |
 
 <br/>
