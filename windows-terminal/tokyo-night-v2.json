@@ -1,0 +1,23 @@
+{
+    "name": "Tokyo Night v2",
+    "background": "#1A1B27",
+    "foreground": "#BBC6F6",
+    "cursorColor": "#B2B2B2",
+    "selectionBackground": "#454159",
+    "black": "#2A2734",
+    "red": "#F7768E",
+    "green": "#00BCDB",
+    "yellow": "#E1C381",
+    "blue": "#7AA2F7",
+    "purple": "#E69F51",
+    "cyan": "#2AB7E7",
+    "white": "#9B84EE",
+    "brightBlack": "#454159",
+    "brightRed": "#FF9E9C",
+    "brightGreen": "#4EF4DF",
+    "brightYellow": "#FFD580",
+    "brightBlue": "#A9B8FF",
+    "brightPurple": "#FFB86C",
+    "brightCyan": "#24D5F8",
+    "brightWhite": "#EEEBFF"
+}
