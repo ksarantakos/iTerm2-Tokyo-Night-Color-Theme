@@ -65,6 +65,25 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 
 <br/>
 
+## cmux
+
+A matching [cmux](https://cmux.com/) setup is included in [`cmux/`](./cmux/). cmux reads terminal colors from Ghostty config files and app-owned settings from `~/.config/cmux/settings.json`.
+
+```sh
+mkdir -p ~/.config/ghostty/themes ~/.config/cmux
+cp "cmux/Tokyo Night v2" ~/.config/ghostty/themes/
+cp cmux/ghostty-config ~/.config/ghostty/config
+cp cmux/settings.jsonc ~/.config/cmux/settings.json
+```
+
+Reload cmux with **Cmd+Shift+,** or:
+
+```sh
+cmux reload-config
+```
+
+<br/>
+
 ## Slack
 
 **Preferences → Appearance → Custom theme** — set each of the four fields:
@@ -77,6 +96,18 @@ A matching [Starship](https://starship.rs/) prompt config is included as [`stars
 | Notifications | `#F7768E` | Red |
 
 Enable **Window gradient** to blend the sidebar and selected-item colours in window backgrounds.
+
+<br/>
+
+## Windows Terminal / PowerShell
+
+A matching Windows Terminal color scheme is included in [`windows-terminal/tokyo-night-v2.json`](./windows-terminal/tokyo-night-v2.json).
+
+**To install:**
+
+1. Open Windows Terminal → **Settings** → **Open JSON file** (bottom-left)
+2. Add the contents of `tokyo-night-v2.json` to the `"schemes"` array
+3. Set the scheme on any profile: **Settings → Profiles → [profile] → Appearance → Color scheme → Tokyo Night v2**
 
 <br/>
 
