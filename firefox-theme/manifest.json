@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "Tokyo Night",
+  "version": "1.0",
+  "description": "Tokyo Night dark theme — inspired by tokyo-night-vscode and Catppuccin.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tokyo-night-theme@iterm2-tokyo-night"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#1A1B27",
+      "frame_inactive": "#13141E",
+      "tab_background_text": "#BBC6F6",
+      "tab_selected": "#1E2036",
+      "tab_text": "#BBC6F6",
+      "tab_line": "#7AA2F7",
+      "tab_loading": "#2AB7E7",
+      "toolbar": "#1E2036",
+      "toolbar_text": "#BBC6F6",
+      "toolbar_field": "#24283B",
+      "toolbar_field_text": "#BBC6F6",
+      "toolbar_field_border": "#1E2036",
+      "toolbar_field_focus": "#24283B",
+      "toolbar_field_text_focus": "#BBC6F6",
+      "toolbar_field_border_focus": "#7AA2F7",
+      "toolbar_field_highlight": "#7AA2F7",
+      "toolbar_field_highlight_text": "#1A1B27",
+      "toolbar_top_separator": "transparent",
+      "toolbar_bottom_separator": "#13141E",
+      "toolbar_vertical_separator": "#13141E",
+      "bookmark_text": "#BBC6F6",
+      "icons": "#BBC6F6",
+      "icons_attention": "#E69F51",
+      "button_background_hover": "#24283B",
+      "button_background_active": "#9B84EE",
+      "popup": "#1E2036",
+      "popup_text": "#BBC6F6",
+      "popup_border": "#13141E",
+      "popup_highlight": "#7AA2F7",
+      "popup_highlight_text": "#1A1B27",
+      "sidebar": "#1A1B27",
+      "sidebar_text": "#BBC6F6",
+      "sidebar_border": "#13141E",
+      "sidebar_highlight": "#7AA2F7",
+      "sidebar_highlight_text": "#1A1B27",
+      "ntp_background": "#1A1B27",
+      "ntp_card_background": "#1E2036",
+      "ntp_text": "#BBC6F6"
+    }
+  }
+}
