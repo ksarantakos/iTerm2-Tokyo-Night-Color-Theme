@@ -111,6 +111,41 @@ A matching Windows Terminal color scheme is included in [`windows-terminal/tokyo
 
 <br/>
 
+## Oh My Posh (PowerShell Prompt)
+
+A matching [Oh My Posh](https://ohmyposh.dev/) theme is included in [`oh-my-posh/tokyo-night-v2.omp.json`](./oh-my-posh/tokyo-night-v2.omp.json).
+
+Features a two-line prompt with powerline separators, git status, execution time, and language version indicators.
+
+**To install:**
+
+1. Install Oh My Posh: `winget install JanDeDobbeleer.OhMyPosh`
+2. Add to your PowerShell profile (`$PROFILE`):
+   ```powershell
+   oh-my-posh init pwsh --config "path/to/tokyo-night-v2.omp.json" | Invoke-Expression
+   ```
+
+<br/>
+
+## Firefox
+
+A matching Firefox browser theme is included in [`firefox-theme/`](./firefox-theme/).
+
+**To install (temporary):**
+
+1. Open `about:debugging` in Firefox
+2. Click **This Firefox** in the sidebar
+3. Click **Load Temporary Add-on...**
+4. Select `firefox-theme/manifest.json`
+
+**To install (permanent):**
+
+1. Zip the contents of `firefox-theme/`
+2. Rename `.zip` to `.xpi`
+3. Drag into Firefox, or submit to [addons.mozilla.org](https://addons.mozilla.org)
+
+<br/>
+
 ## Colors
 
 ### Tokyo Night (original)
